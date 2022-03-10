@@ -1,7 +1,11 @@
+
 dest/
 
+#specific Files
 learning.txt
 
+# npm created files
+package-lock.json
 # ------------------------------
 # Language
 # ------------------------------
@@ -44,15 +48,9 @@ build
 # https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
 
-
-
-
-
 # ------------------------------
 # IDE
 # ------------------------------
-
-
 
 # Created by https://www.gitignore.io/api/webstorm
 
@@ -104,15 +102,9 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 
-
-
-
-
 # ------------------------------
 # OS
 # ------------------------------
-
-
 
 # Created by https://www.gitignore.io/api/windows,osx,linux
 
