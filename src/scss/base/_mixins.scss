@@ -1,0 +1,44 @@
+/* 
+//mixins are reusable style codes that  uses a OOP aproach
+@mixin heading ($color :black){ // black color by default
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: $color;
+    letter-spacing: 1px;
+} */
+
+@use "variables" as v;
+
+@mixin cellphone {
+    @media (min-width:v.$cellphone) {
+        @content; // allows to write a block of code from the file that calls the mixin
+    }
+}
+
+@mixin tablet {
+    @media (min-width:v.$tablet) {
+        @content;
+    }
+}
+@mixin desktop_screen {
+    @media (min-width:v.$desktop_screen) {
+        @content;
+    }
+}
+@mixin desktop_screen_xl{
+    @media (min-width:v.$desktop_screen_xl) {
+        @content;
+    }
+}
+
+@mixin grid ($numberOfColumns,$gapValue) {
+    display: grid;
+    grid-template-columns: repeat($numberOfColumns, 1fr);
+    gap: $gapValue;
+}
+
+@mixin resetList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

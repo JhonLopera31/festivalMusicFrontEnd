@@ -1,0 +1,6 @@
+
+//@import "base/variables"; // old sintax. This way the files are global availables
+//@import "content/content"; //
+
+@use "base"; // new sintax. Folder that contain the index files with the forwards
+@use "layout"
